@@ -3,7 +3,7 @@ import { useStore } from "@/src/store";
 import ProductDetails from "./ProductDetails";
 import { useMemo } from "react";
 import { formatCurrency } from "@/src/utils";
-import { createOrder } from "@/actions/create-order";
+import { createOrder } from "@/actions/create-order-action";
 import { OrderSchema } from "@/src/schema";
 import { toast } from "react-toastify";
 

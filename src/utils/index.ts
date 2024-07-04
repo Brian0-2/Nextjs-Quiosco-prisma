@@ -4,3 +4,13 @@ export function formatCurrency(amount: number){
         currency: 'USD'
     }).format(amount)
 }
+
+export function getImagePath(imagePath: string) {
+    const claudinaryBaseUrl = 'https://res.cloudinary.com';
+
+    if(imagePath.startsWith(claudinaryBaseUrl)){
+        return imagePath
+    }else {
+        return `/products/${imagePath}.jpg`
+    }
+}
